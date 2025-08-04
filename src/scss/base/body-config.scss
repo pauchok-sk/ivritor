@@ -1,0 +1,10 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.sect-m {
+  margin: 72px 0px;
+  @include laptop-min {
+    margin: 64px 0px;
+  }
+}

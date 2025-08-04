@@ -1,0 +1,35 @@
+.btn-reset {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.btn-s {
+  @include flex-center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 20px 35px;
+  background-color: white;
+  border-radius: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: black;
+
+  transition: opacity 0.2s ease;
+  @include hover {
+    opacity: 0.8;
+  }
+
+  &._linear {
+    box-shadow: 2px 2px 7px 0 rgba(33, 33, 33, 0.2);
+    background: linear-gradient(45deg, #5c5de7 0%, #ff6f91 100%);
+    color: white;
+  }
+}

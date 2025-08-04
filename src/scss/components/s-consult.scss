@@ -1,0 +1,64 @@
+.s-consult {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1175px;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 16px;
+    @include laptop-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    border-radius: 24px;
+    padding: 24px 32px;
+    @include tablet {
+      padding: 24px 16px;
+      flex-wrap: wrap;
+      align-items: start;
+      gap: 16px;
+    }
+
+    &::before {
+      position: absolute;
+      inset: -1px;
+      content: "";
+      background: linear-gradient(45deg, #5c5de7 0%, #ff6f91 100%);
+      z-index: -1;
+      border-radius: 24px;
+    }
+  }
+  &__item-icon {
+    flex-shrink: 0;
+  }
+  &__item-body {
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__item-title {
+    font-size: 24px;
+    line-height: 117%;
+    margin: 0px 0px 12px 0px;
+  }
+  &__item-content {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+  }
+  &__btn {
+    width: 325px;
+    max-width: 100%;
+    margin: 32px auto 0px auto;
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+}

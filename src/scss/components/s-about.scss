@@ -1,0 +1,140 @@
+.s-about {
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0px 0px 12px 0px;
+  }
+  &__title {
+    max-width: 1075px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    position: relative;
+    border-radius: 8px;
+    background-color: white;
+    padding: 24px;
+    @include tablet {
+      padding: 24px 16px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: -1px;
+      border-radius: 24px;
+      border-radius: 8px;
+      background: linear-gradient(45deg, #5c5de7 0%, #ff6f91 100%);
+      z-index: -1;
+    }
+  }
+  &__item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    background: linear-gradient(45deg, #5c5de7 0%, #ff6f91 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px 0px 12px 0px;
+  }
+  &__item-content {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    margin: 0;
+  }
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 85px 75px;
+    background-color: var(--primary);
+    border-radius: 20px;
+    margin-top: 40px;
+    z-index: 1;
+    @include laptop-middle {
+      padding: 32px;
+    }
+    @include laptop-min {
+      padding-bottom: 200px;
+    }
+    @include tablet {
+      padding: 32px 16px 300px 16px;
+    }
+  }
+  &__test-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    max-width: 750px;
+    margin: 0px 0px 32px 0px;
+    @include laptop-middle {
+      font-size: 28px;
+      max-width: 685px;
+    }
+    @include tablet {
+      font-size: 24px;
+    }
+
+    div {
+      position: relative;
+      padding: 3px 6px;
+      z-index: 1;
+      
+      &::before {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: white;
+        border-radius: 10px;
+        z-index: -1;
+      }
+    }
+    span {
+      display: block;
+      background: linear-gradient(45deg, #5c5de7 0%, #ff6f91 100%);
+      font-weight: 600;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__test-btn {
+    width: 325px;
+    max-width: 100%;
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+  &__test-img {
+    position: absolute;
+    top: -85px;
+    right: 140px;
+    z-index: -1;
+    @include laptop {
+      right: 0;
+    }
+    @include laptop-min {
+      top: auto;
+      bottom: -420px;
+      right: 0;
+      width: 300px;
+    }
+    @include tablet {
+      right: auto;
+      left: -10px;
+      bottom: -380px;
+    }
+  }
+}

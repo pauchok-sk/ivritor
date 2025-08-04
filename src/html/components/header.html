@@ -1,0 +1,59 @@
+<header class="header">
+  <div class="container">
+    <div class="header__body">
+      <a href="/" class="header__logo">
+        <img src="@img/logo.png" alt="logo" />
+      </a>
+      <ul class="list header__list">
+        <li><a href="#s-test" data-anchor>Пройдите тест</a></li>
+        <li><a href="#s-reviews" data-anchor>Отзывы</a></li>
+        <li><a href="#s-contacts" data-anchor>Контакты</a></li>
+      </ul>
+      <div class="header__contacts">
+        <a href="tel:050-2345-591" class="header__tel">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+          </svg>
+          <span>050-2345-591</span>
+        </a>
+        <a href="#" target="_blank" class="header__whats">
+          <img src="@img/whats.svg" alt="icon" />
+        </a>
+        <a href="#s-consult" data-anchor class="btn-s header__btn">
+          <span>Консультация</span>
+        </a>
+      </div>
+      <div class="header__burger-btn" id="burger-open">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="burger-overlay" id="burger-overlay"></div>
+
+<div class="burger" id="burger">
+  <div class="burger__head">
+    <a href="/" class="burger__logo">
+      <img src="@img/logo.png" alt="logo" />
+    </a>
+    <div class="burger__close" id="burger-close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-close"></use>
+      </svg>
+    </div>
+  </div>
+  <ul class="list burger__list">
+    <li><a href="#s-test" data-anchor>Пройдите тест</a></li>
+    <li><a href="#s-reviews" data-anchor>Отзывы</a></li>
+    <li><a href="#s-contacts" data-anchor>Контакты</a></li>
+  </ul>
+  <a href="#" target="_blank" class="burger__whats">
+    <img src="@img/whats.svg" alt="icon" />
+  </a>
+  <a href="#s-consult" data-anchor class="btn-s burger__btn">
+    <span>Консультация</span>
+  </a>
+</div>

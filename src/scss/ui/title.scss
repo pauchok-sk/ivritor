@@ -1,0 +1,22 @@
+.s-title {
+  font-size: 46px;
+  line-height: 122%;
+  margin: 0px 0px 32px 0px;
+  @include laptop-min {
+    font-size: 38px;
+  }
+  @include tablet {
+    font-size: 32px;
+  }
+
+  &._center {
+    text-align: center;
+  }
+
+  span {
+    background: linear-gradient(45deg, #5c5de7 0%, #ff6f91 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
